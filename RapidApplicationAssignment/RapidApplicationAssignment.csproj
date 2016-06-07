@@ -71,11 +71,11 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Directory.cs">
+    <Compile Include="Directory2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Directory.Designer.cs">
-      <DependentUpon>Directory.cs</DependentUpon>
+    <Compile Include="Directory2.Designer.cs">
+      <DependentUpon>Directory2.cs</DependentUpon>
     </Compile>
     <Compile Include="EditCustomer.cs">
       <SubType>Form</SubType>

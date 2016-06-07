@@ -1,6 +1,6 @@
 ﻿namespace RapidApplicationAssignment
 {
-    partial class Directory
+    partial class Directory2
     {
         /// <summary>
         /// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RapidApplicationAssignment
 {
-    public partial class Directory : Form
+    public partial class Directory2 : Form
     {
-        public Directory()
+        public Directory2()
         {
             InitializeComponent();
         }
