@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RapidApplicationAssignment
 {
-    public partial class CustomerProfile : Form
+    public partial class Directory : Form
     {
-        public CustomerProfile()
+        public Directory()
         {
             InitializeComponent();
         }
@@ -25,23 +25,7 @@ namespace RapidApplicationAssignment
 
         }
 
-        private void customersBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.customersBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.furzAFlynShopDBDataSet);
-
-        }
-
-        private void customersBindingNavigatorSaveItem_Click_2(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.customersBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.furzAFlynShopDBDataSet);
-
-        }
-
-        private void CustomerProfile_Load(object sender, EventArgs e)
+        private void Directory_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'furzAFlynShopDBDataSet.Customers' table. You can move, or remove it, as needed.
             this.customersTableAdapter.Fill(this.furzAFlynShopDBDataSet.Customers);

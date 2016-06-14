@@ -11,6 +11,7 @@
     <AssemblyName>RapidApplicationAssignment</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -71,17 +71,16 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Directory2.cs">
+    <Compile Include="Directory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Directory2.Designer.cs">
-      <DependentUpon>Directory2.cs</DependentUpon>
+    <Compile Include="Directory.Designer.cs">
+      <DependentUpon>Directory.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EditCustomer.Designer.cs">
-      <DependentUpon>EditCustomer.cs</DependentUpon>
+    <Compile Include="FurzAFlynShopDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FurzAFlynShopDBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="LogAppointment.cs">
       <SubType>Form</SubType>
@@ -97,11 +96,14 @@
     <Compile Include="SearchCustomer.Designer.cs">
       <DependentUpon>SearchCustomer.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CustomerProfile.resx">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditCustomer.resx">
-      <DependentUpon>EditCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="Directory.resx">
+      <DependentUpon>Directory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -111,10 +113,22 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SearchCustomer.resx">
       <DependentUpon>SearchCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="FurzAFlynShopDBDataSet.xsc">
+      <DependentUpon>FurzAFlynShopDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FurzAFlynShopDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FurzAFlynShopDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FurzAFlynShopDBDataSet.xss">
+      <DependentUpon>FurzAFlynShopDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -144,6 +158,16 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FurzAFlynShopDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FurzAFlynShopDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>FurzAFlynShopDB.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\FurzaFlyn-Logo-WebSize.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -28,133 +28,155 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.HelloLabel = new System.Windows.Forms.Label();
+            this.DateTimeLabel = new System.Windows.Forms.Label();
+            this.MainMenuGroupBox = new System.Windows.Forms.GroupBox();
+            this.LogApptRadioButton = new System.Windows.Forms.RadioButton();
+            this.AddNewRadioButton = new System.Windows.Forms.RadioButton();
+            this.ViewDirectoryRadioButton = new System.Windows.Forms.RadioButton();
+            this.MainMenuToolTipLabel = new System.Windows.Forms.Label();
+            this.ExitButton = new System.Windows.Forms.Button();
+            this.DateTimeTextBox = new System.Windows.Forms.TextBox();
+            this.CompanyLogoBox = new System.Windows.Forms.PictureBox();
+            this.OKButton = new System.Windows.Forms.Button();
+            this.NameTextBox = new System.Windows.Forms.TextBox();
+            this.MainMenuGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CompanyLogoBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // HelloLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.HelloLabel.AutoSize = true;
+            this.HelloLabel.Location = new System.Drawing.Point(35, 15);
+            this.HelloLabel.Name = "HelloLabel";
+            this.HelloLabel.Size = new System.Drawing.Size(31, 13);
+            this.HelloLabel.TabIndex = 0;
+            this.HelloLabel.Text = "Hello";
             // 
-            // label3
+            // DateTimeLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(278, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
+            this.DateTimeLabel.AutoSize = true;
+            this.DateTimeLabel.Location = new System.Drawing.Point(333, 15);
+            this.DateTimeLabel.Name = "DateTimeLabel";
+            this.DateTimeLabel.Size = new System.Drawing.Size(50, 13);
+            this.DateTimeLabel.TabIndex = 5;
+            this.DateTimeLabel.Text = "Today is:";
             // 
-            // groupBox1
+            // MainMenuGroupBox
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(272, 63);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(239, 132);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.MainMenuGroupBox.Controls.Add(this.LogApptRadioButton);
+            this.MainMenuGroupBox.Controls.Add(this.AddNewRadioButton);
+            this.MainMenuGroupBox.Controls.Add(this.ViewDirectoryRadioButton);
+            this.MainMenuGroupBox.Controls.Add(this.MainMenuToolTipLabel);
+            this.MainMenuGroupBox.Location = new System.Drawing.Point(247, 79);
+            this.MainMenuGroupBox.Name = "MainMenuGroupBox";
+            this.MainMenuGroupBox.Size = new System.Drawing.Size(245, 132);
+            this.MainMenuGroupBox.TabIndex = 6;
+            this.MainMenuGroupBox.TabStop = false;
+            this.MainMenuGroupBox.Text = "What would you like to do?";
             // 
-            // button1
+            // LogApptRadioButton
             // 
-            this.button1.Location = new System.Drawing.Point(436, 226);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.LogApptRadioButton.AutoSize = true;
+            this.LogApptRadioButton.Location = new System.Drawing.Point(9, 91);
+            this.LogApptRadioButton.Name = "LogApptRadioButton";
+            this.LogApptRadioButton.Size = new System.Drawing.Size(192, 17);
+            this.LogApptRadioButton.TabIndex = 3;
+            this.LogApptRadioButton.TabStop = true;
+            this.LogApptRadioButton.Text = "Log New Appointment for Customer";
+            this.LogApptRadioButton.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // AddNewRadioButton
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "label2";
+            this.AddNewRadioButton.AutoSize = true;
+            this.AddNewRadioButton.Location = new System.Drawing.Point(9, 67);
+            this.AddNewRadioButton.Name = "AddNewRadioButton";
+            this.AddNewRadioButton.Size = new System.Drawing.Size(116, 17);
+            this.AddNewRadioButton.TabIndex = 2;
+            this.AddNewRadioButton.TabStop = true;
+            this.AddNewRadioButton.Text = "Add New Customer";
+            this.AddNewRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // ViewDirectoryRadioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(9, 43);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.ViewDirectoryRadioButton.AutoSize = true;
+            this.ViewDirectoryRadioButton.Location = new System.Drawing.Point(9, 43);
+            this.ViewDirectoryRadioButton.Name = "ViewDirectoryRadioButton";
+            this.ViewDirectoryRadioButton.Size = new System.Drawing.Size(140, 17);
+            this.ViewDirectoryRadioButton.TabIndex = 1;
+            this.ViewDirectoryRadioButton.TabStop = true;
+            this.ViewDirectoryRadioButton.Text = "View Customer Directory";
+            this.ViewDirectoryRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // MainMenuToolTipLabel
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(9, 67);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.MainMenuToolTipLabel.AutoSize = true;
+            this.MainMenuToolTipLabel.Location = new System.Drawing.Point(6, 16);
+            this.MainMenuToolTipLabel.Name = "MainMenuToolTipLabel";
+            this.MainMenuToolTipLabel.Size = new System.Drawing.Size(200, 13);
+            this.MainMenuToolTipLabel.TabIndex = 0;
+            this.MainMenuToolTipLabel.Text = "Please choose one option, then click OK";
             // 
-            // radioButton3
+            // ExitButton
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(9, 91);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.ExitButton.Location = new System.Drawing.Point(417, 217);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(75, 23);
+            this.ExitButton.TabIndex = 7;
+            this.ExitButton.Text = "Exit";
+            this.ExitButton.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // DateTimeTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(319, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
+            this.DateTimeTextBox.Location = new System.Drawing.Point(389, 12);
+            this.DateTimeTextBox.Name = "DateTimeTextBox";
+            this.DateTimeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.DateTimeTextBox.TabIndex = 8;
             // 
-            // pictureBox1
+            // CompanyLogoBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(16, 79);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(170, 92);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.CompanyLogoBox.Image = global::RapidApplicationAssignment.Properties.Resources.FurzaFlyn_Logo_WebSize;
+            this.CompanyLogoBox.Location = new System.Drawing.Point(38, 79);
+            this.CompanyLogoBox.Name = "CompanyLogoBox";
+            this.CompanyLogoBox.Size = new System.Drawing.Size(170, 161);
+            this.CompanyLogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CompanyLogoBox.TabIndex = 9;
+            this.CompanyLogoBox.TabStop = false;
+            // 
+            // OKButton
+            // 
+            this.OKButton.Location = new System.Drawing.Point(247, 217);
+            this.OKButton.Name = "OKButton";
+            this.OKButton.Size = new System.Drawing.Size(75, 23);
+            this.OKButton.TabIndex = 10;
+            this.OKButton.Text = "OK";
+            this.OKButton.UseVisualStyleBackColor = true;
+            // 
+            // NameTextBox
+            // 
+            this.NameTextBox.Location = new System.Drawing.Point(72, 12);
+            this.NameTextBox.Name = "NameTextBox";
+            this.NameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NameTextBox.TabIndex = 11;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(523, 261);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(531, 257);
+            this.Controls.Add(this.NameTextBox);
+            this.Controls.Add(this.OKButton);
+            this.Controls.Add(this.CompanyLogoBox);
+            this.Controls.Add(this.DateTimeTextBox);
+            this.Controls.Add(this.ExitButton);
+            this.Controls.Add(this.MainMenuGroupBox);
+            this.Controls.Add(this.DateTimeLabel);
+            this.Controls.Add(this.HelloLabel);
             this.Name = "Dashboard";
-            this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Text = "Welcome!";
+            this.MainMenuGroupBox.ResumeLayout(false);
+            this.MainMenuGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CompanyLogoBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,17 +184,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-
+        private System.Windows.Forms.Label HelloLabel;
+        private System.Windows.Forms.Label DateTimeLabel;
+        private System.Windows.Forms.GroupBox MainMenuGroupBox;
+        private System.Windows.Forms.RadioButton LogApptRadioButton;
+        private System.Windows.Forms.RadioButton AddNewRadioButton;
+        private System.Windows.Forms.RadioButton ViewDirectoryRadioButton;
+        private System.Windows.Forms.Label MainMenuToolTipLabel;
+        private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.TextBox DateTimeTextBox;
+        private System.Windows.Forms.PictureBox CompanyLogoBox;
+        private System.Windows.Forms.Button OKButton;
+        private System.Windows.Forms.TextBox NameTextBox;
     }
 }
 
