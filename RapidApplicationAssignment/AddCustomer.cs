@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RapidApplicationAssignment
 {
-    public partial class CustomerProfile : Form
+    public partial class AddCustomer : Form
     {
-        public CustomerProfile()
+        public AddCustomer()
         {
             InitializeComponent();
         }

@@ -697,6 +697,8 @@ namespace RapidApplicationAssignment {
             
             private global::System.Data.DataColumn columnImportantNotes;
             
+            private global::System.Data.DataColumn columnPhoto;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CustomersDataTable() {
@@ -844,6 +846,14 @@ namespace RapidApplicationAssignment {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PhotoColumn {
+                get {
+                    return this.columnPhoto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -879,7 +889,7 @@ namespace RapidApplicationAssignment {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CustomersRow AddCustomersRow(int CustomerId, string NameOfPet, string AgeAtFirstVisit, string BreedType, string SizeCategory, string PrimaryContactFirstName, string PrimaryContactLastName, string PrimaryContactPhone, string PrimaryContactEmail, string PrimaryAlternatePhone, string SecondaryContactName, string SecondaryContactPhone, string VetInfo, string ImportantNotes) {
+            public CustomersRow AddCustomersRow(int CustomerId, string NameOfPet, string AgeAtFirstVisit, string BreedType, string SizeCategory, string PrimaryContactFirstName, string PrimaryContactLastName, string PrimaryContactPhone, string PrimaryContactEmail, string PrimaryAlternatePhone, string SecondaryContactName, string SecondaryContactPhone, string VetInfo, string ImportantNotes, string Photo) {
                 CustomersRow rowCustomersRow = ((CustomersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         CustomerId,
@@ -895,7 +905,8 @@ namespace RapidApplicationAssignment {
                         SecondaryContactName,
                         SecondaryContactPhone,
                         VetInfo,
-                        ImportantNotes};
+                        ImportantNotes,
+                        Photo};
                 rowCustomersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCustomersRow);
                 return rowCustomersRow;
@@ -939,6 +950,7 @@ namespace RapidApplicationAssignment {
                 this.columnSecondaryContactPhone = base.Columns["SecondaryContactPhone"];
                 this.columnVetInfo = base.Columns["VetInfo"];
                 this.columnImportantNotes = base.Columns["ImportantNotes"];
+                this.columnPhoto = base.Columns["Photo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -972,6 +984,8 @@ namespace RapidApplicationAssignment {
                 base.Columns.Add(this.columnVetInfo);
                 this.columnImportantNotes = new global::System.Data.DataColumn("ImportantNotes", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnImportantNotes);
+                this.columnPhoto = new global::System.Data.DataColumn("Photo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPhoto);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnCustomerId}, true));
                 this.columnCustomerId.AllowDBNull = false;
@@ -1450,6 +1464,22 @@ namespace RapidApplicationAssignment {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Photo {
+                get {
+                    try {
+                        return ((string)(this[this.tableCustomers.PhotoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Photo\' in table \'Customers\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCustomers.PhotoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsAgeAtFirstVisitNull() {
                 return this.IsNull(this.tableCustomers.AgeAtFirstVisitColumn);
             }
@@ -1542,6 +1572,18 @@ namespace RapidApplicationAssignment {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetImportantNotesNull() {
                 this[this.tableCustomers.ImportantNotesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPhotoNull() {
+                return this.IsNull(this.tableCustomers.PhotoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPhotoNull() {
+                this[this.tableCustomers.PhotoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

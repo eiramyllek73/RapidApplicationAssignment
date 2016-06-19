@@ -37,15 +37,18 @@
             this.MainMenuToolTipLabel = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
             this.DateTimeTextBox = new System.Windows.Forms.TextBox();
-            this.CompanyLogoBox = new System.Windows.Forms.PictureBox();
             this.OKButton = new System.Windows.Forms.Button();
             this.NameTextBox = new System.Windows.Forms.TextBox();
+            this.CompanyLogoBox = new System.Windows.Forms.PictureBox();
             this.MainMenuGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CompanyLogoBox)).BeginInit();
             this.SuspendLayout();
             // 
             // HelloLabel
             // 
+            this.HelloLabel.AccessibleDescription = "This is a greeting label.";
+            this.HelloLabel.AccessibleName = "HelloLabel";
+            this.HelloLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.HelloLabel.AutoSize = true;
             this.HelloLabel.Location = new System.Drawing.Point(35, 15);
             this.HelloLabel.Name = "HelloLabel";
@@ -55,15 +58,21 @@
             // 
             // DateTimeLabel
             // 
+            this.DateTimeLabel.AccessibleDescription = "This label describes the current date.";
+            this.DateTimeLabel.AccessibleName = "CurrentDateLabel";
+            this.DateTimeLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.DateTimeLabel.AutoSize = true;
             this.DateTimeLabel.Location = new System.Drawing.Point(333, 15);
             this.DateTimeLabel.Name = "DateTimeLabel";
             this.DateTimeLabel.Size = new System.Drawing.Size(50, 13);
-            this.DateTimeLabel.TabIndex = 5;
+            this.DateTimeLabel.TabIndex = 0;
             this.DateTimeLabel.Text = "Today is:";
             // 
             // MainMenuGroupBox
             // 
+            this.MainMenuGroupBox.AccessibleDescription = "This box displays choices for the user to choose one option from.";
+            this.MainMenuGroupBox.AccessibleName = "OptionsBox";
+            this.MainMenuGroupBox.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this.MainMenuGroupBox.Controls.Add(this.LogApptRadioButton);
             this.MainMenuGroupBox.Controls.Add(this.AddNewRadioButton);
             this.MainMenuGroupBox.Controls.Add(this.ViewDirectoryRadioButton);
@@ -122,19 +131,45 @@
             this.ExitButton.Location = new System.Drawing.Point(417, 217);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(75, 23);
-            this.ExitButton.TabIndex = 7;
+            this.ExitButton.TabIndex = 5;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
             // 
             // DateTimeTextBox
             // 
+            this.DateTimeTextBox.AccessibleDescription = "This text box displays the current date and time upon application load";
+            this.DateTimeTextBox.AccessibleName = "CurrentDateAndTime";
             this.DateTimeTextBox.Location = new System.Drawing.Point(389, 12);
             this.DateTimeTextBox.Name = "DateTimeTextBox";
+            this.DateTimeTextBox.ReadOnly = true;
             this.DateTimeTextBox.Size = new System.Drawing.Size(100, 20);
-            this.DateTimeTextBox.TabIndex = 8;
+            this.DateTimeTextBox.TabIndex = 0;
+            // 
+            // OKButton
+            // 
+            this.OKButton.Location = new System.Drawing.Point(247, 217);
+            this.OKButton.Name = "OKButton";
+            this.OKButton.Size = new System.Drawing.Size(75, 23);
+            this.OKButton.TabIndex = 4;
+            this.OKButton.Text = "OK";
+            this.OKButton.UseVisualStyleBackColor = true;
+            // 
+            // NameTextBox
+            // 
+            this.NameTextBox.AccessibleDescription = "This texbox will show the name of the user.";
+            this.NameTextBox.AccessibleName = "UserNameTextBox";
+            this.NameTextBox.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.NameTextBox.Location = new System.Drawing.Point(72, 12);
+            this.NameTextBox.Name = "NameTextBox";
+            this.NameTextBox.ReadOnly = true;
+            this.NameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NameTextBox.TabIndex = 0;
+            this.NameTextBox.Text = "Wendy";
             // 
             // CompanyLogoBox
             // 
+            this.CompanyLogoBox.AccessibleDescription = "This is a picture box that  displays the company logo.";
+            this.CompanyLogoBox.AccessibleName = "LogoPictureBox";
             this.CompanyLogoBox.Image = global::RapidApplicationAssignment.Properties.Resources.FurzaFlyn_Logo_WebSize;
             this.CompanyLogoBox.Location = new System.Drawing.Point(38, 79);
             this.CompanyLogoBox.Name = "CompanyLogoBox";
@@ -142,22 +177,6 @@
             this.CompanyLogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CompanyLogoBox.TabIndex = 9;
             this.CompanyLogoBox.TabStop = false;
-            // 
-            // OKButton
-            // 
-            this.OKButton.Location = new System.Drawing.Point(247, 217);
-            this.OKButton.Name = "OKButton";
-            this.OKButton.Size = new System.Drawing.Size(75, 23);
-            this.OKButton.TabIndex = 10;
-            this.OKButton.Text = "OK";
-            this.OKButton.UseVisualStyleBackColor = true;
-            // 
-            // NameTextBox
-            // 
-            this.NameTextBox.Location = new System.Drawing.Point(72, 12);
-            this.NameTextBox.Name = "NameTextBox";
-            this.NameTextBox.Size = new System.Drawing.Size(100, 20);
-            this.NameTextBox.TabIndex = 11;
             // 
             // Dashboard
             // 

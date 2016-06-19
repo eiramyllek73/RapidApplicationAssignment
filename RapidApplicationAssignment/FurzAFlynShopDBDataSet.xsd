@@ -197,7 +197,7 @@ SELECT CustomerId, NameOfPet, AgeAtFirstVisit, BreedType, SizeCategory, PrimaryC
   <xs:element name="FurzAFlynShopDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FurzAFlynShopDBDataSet" msprop:Generator_UserDSName="FurzAFlynShopDBDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Appointments" msprop:Generator_TableClassName="AppointmentsDataTable" msprop:Generator_TableVarName="tableAppointments" msprop:Generator_TablePropName="Appointments" msprop:Generator_RowDeletingName="AppointmentsRowDeleting" msprop:Generator_RowChangingName="AppointmentsRowChanging" msprop:Generator_RowEvHandlerName="AppointmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="AppointmentsRowDeleted" msprop:Generator_UserTableName="Appointments" msprop:Generator_RowChangedName="AppointmentsRowChanged" msprop:Generator_RowEvArgName="AppointmentsRowChangeEvent" msprop:Generator_RowClassName="AppointmentsRow">
+        <xs:element name="Appointments" msprop:Generator_TableClassName="AppointmentsDataTable" msprop:Generator_TableVarName="tableAppointments" msprop:Generator_RowChangedName="AppointmentsRowChanged" msprop:Generator_TablePropName="Appointments" msprop:Generator_RowDeletingName="AppointmentsRowDeleting" msprop:Generator_RowChangingName="AppointmentsRowChanging" msprop:Generator_RowEvHandlerName="AppointmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="AppointmentsRowDeleted" msprop:Generator_RowClassName="AppointmentsRow" msprop:Generator_UserTableName="Appointments" msprop:Generator_RowEvArgName="AppointmentsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="AppointmentId" msprop:Generator_ColumnVarNameInTable="columnAppointmentId" msprop:Generator_ColumnPropNameInRow="AppointmentId" msprop:Generator_ColumnPropNameInTable="AppointmentIdColumn" msprop:Generator_UserColumnName="AppointmentId" type="xs:int" />
@@ -227,7 +227,7 @@ SELECT CustomerId, NameOfPet, AgeAtFirstVisit, BreedType, SizeCategory, PrimaryC
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Customers" msprop:Generator_TableClassName="CustomersDataTable" msprop:Generator_TableVarName="tableCustomers" msprop:Generator_TablePropName="Customers" msprop:Generator_RowDeletingName="CustomersRowDeleting" msprop:Generator_RowChangingName="CustomersRowChanging" msprop:Generator_RowEvHandlerName="CustomersRowChangeEventHandler" msprop:Generator_RowDeletedName="CustomersRowDeleted" msprop:Generator_UserTableName="Customers" msprop:Generator_RowChangedName="CustomersRowChanged" msprop:Generator_RowEvArgName="CustomersRowChangeEvent" msprop:Generator_RowClassName="CustomersRow">
+        <xs:element name="Customers" msprop:Generator_TableClassName="CustomersDataTable" msprop:Generator_TableVarName="tableCustomers" msprop:Generator_RowChangedName="CustomersRowChanged" msprop:Generator_TablePropName="Customers" msprop:Generator_RowDeletingName="CustomersRowDeleting" msprop:Generator_RowChangingName="CustomersRowChanging" msprop:Generator_RowEvHandlerName="CustomersRowChangeEventHandler" msprop:Generator_RowDeletedName="CustomersRowDeleted" msprop:Generator_RowClassName="CustomersRow" msprop:Generator_UserTableName="Customers" msprop:Generator_RowEvArgName="CustomersRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CustomerId" msprop:Generator_ColumnVarNameInTable="columnCustomerId" msprop:Generator_ColumnPropNameInRow="CustomerId" msprop:Generator_ColumnPropNameInTable="CustomerIdColumn" msprop:Generator_UserColumnName="CustomerId" type="xs:int" />
@@ -322,6 +322,7 @@ SELECT CustomerId, NameOfPet, AgeAtFirstVisit, BreedType, SizeCategory, PrimaryC
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="Photo" msprop:Generator_ColumnVarNameInTable="columnPhoto" msprop:Generator_ColumnPropNameInRow="Photo" msprop:Generator_ColumnPropNameInTable="PhotoColumn" msprop:Generator_UserColumnName="Photo" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -338,8 +339,8 @@ SELECT CustomerId, NameOfPet, AgeAtFirstVisit, BreedType, SizeCategory, PrimaryC
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_Appointments_ToTable" msdata:parent="Customers" msdata:child="Appointments" msdata:parentkey="NameOfPet" msdata:childkey="NameOfPet" msprop:Generator_UserChildTable="Appointments" msprop:Generator_ChildPropName="GetAppointmentsRowsByFK_Appointments_ToTable" msprop:Generator_UserRelationName="FK_Appointments_ToTable" msprop:Generator_RelationVarName="relationFK_Appointments_ToTable" msprop:Generator_UserParentTable="Customers" msprop:Generator_ParentPropName="CustomersRowByFK_Appointments_ToTable" />
-      <msdata:Relationship name="FK_Appointments_ToTable_1" msdata:parent="Customers" msdata:child="Appointments" msdata:parentkey="PrimaryContactPhone" msdata:childkey="PrimaryContactPhone" msprop:Generator_UserChildTable="Appointments" msprop:Generator_ChildPropName="GetAppointmentsRowsByFK_Appointments_ToTable_1" msprop:Generator_UserRelationName="FK_Appointments_ToTable_1" msprop:Generator_RelationVarName="relationFK_Appointments_ToTable_1" msprop:Generator_UserParentTable="Customers" msprop:Generator_ParentPropName="CustomersRowByFK_Appointments_ToTable_1" />
+      <msdata:Relationship name="FK_Appointments_ToTable" msdata:parent="Customers" msdata:child="Appointments" msdata:parentkey="NameOfPet" msdata:childkey="NameOfPet" msprop:Generator_UserChildTable="Appointments" msprop:Generator_ChildPropName="GetAppointmentsRowsByFK_Appointments_ToTable" msprop:Generator_UserRelationName="FK_Appointments_ToTable" msprop:Generator_ParentPropName="CustomersRowByFK_Appointments_ToTable" msprop:Generator_RelationVarName="relationFK_Appointments_ToTable" msprop:Generator_UserParentTable="Customers" />
+      <msdata:Relationship name="FK_Appointments_ToTable_1" msdata:parent="Customers" msdata:child="Appointments" msdata:parentkey="PrimaryContactPhone" msdata:childkey="PrimaryContactPhone" msprop:Generator_UserChildTable="Appointments" msprop:Generator_ChildPropName="GetAppointmentsRowsByFK_Appointments_ToTable_1" msprop:Generator_UserRelationName="FK_Appointments_ToTable_1" msprop:Generator_ParentPropName="CustomersRowByFK_Appointments_ToTable_1" msprop:Generator_RelationVarName="relationFK_Appointments_ToTable_1" msprop:Generator_UserParentTable="Customers" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

@@ -59,11 +59,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerProfile.cs">
+    <Compile Include="AppointmentLog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerProfile.Designer.cs">
-      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    <Compile Include="AppointmentLog.Designer.cs">
+      <DependentUpon>AppointmentLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDirectory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDirectory.Designer.cs">
+      <DependentUpon>CustomerDirectory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -71,11 +83,11 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Directory.cs">
+    <Compile Include="EditCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Directory.Designer.cs">
-      <DependentUpon>Directory.cs</DependentUpon>
+    <Compile Include="EditCustomer.Designer.cs">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="FurzAFlynShopDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -96,14 +108,20 @@
     <Compile Include="SearchCustomer.Designer.cs">
       <DependentUpon>SearchCustomer.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CustomerProfile.resx">
-      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    <EmbeddedResource Include="AppointmentLog.resx">
+      <DependentUpon>AppointmentLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDirectory.resx">
+      <DependentUpon>CustomerDirectory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Directory.resx">
-      <DependentUpon>Directory.cs</DependentUpon>
+    <EmbeddedResource Include="EditCustomer.resx">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

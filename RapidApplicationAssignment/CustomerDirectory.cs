@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RapidApplicationAssignment
 {
-    public partial class Directory : Form
+    public partial class CustomerDirectory : Form
     {
-        public Directory()
+        public CustomerDirectory()
         {
             InitializeComponent();
         }
@@ -25,7 +25,7 @@ namespace RapidApplicationAssignment
 
         }
 
-        private void Directory_Load(object sender, EventArgs e)
+        private void CustomerDirectory_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'furzAFlynShopDBDataSet.Customers' table. You can move, or remove it, as needed.
             this.customersTableAdapter.Fill(this.furzAFlynShopDBDataSet.Customers);
