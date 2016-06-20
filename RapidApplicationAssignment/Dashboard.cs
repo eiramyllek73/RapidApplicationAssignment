@@ -16,5 +16,34 @@ namespace RapidApplicationAssignment
         {
             InitializeComponent();
         }
+
+        private void ViewDirectoryRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddNewRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogApptRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OKButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /**
+        * This method will activate when the exit application menu option is clicked, and exit the program.
+        */
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            // Exit the application
+            this.Close();
+        }
     }
 }
